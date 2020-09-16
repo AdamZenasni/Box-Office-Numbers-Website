@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/layout.css" th:href="@{/layout.css}"/>
+    <script src="../static/main.js" th:src="@{/main.js}"></script>
+    <title>Box Office</title>
+</head>
+<body>
+
+<header>
+    <img src="../static/images/boxOffice.jpg" th:src="@{/images/boxOffice.jpg}" alt="Box Office header"/>
+    <h1>BOX OFFICE NUMBERS</h1>
+    <h6>COMPARE THE TOP FILMS</h6>
+</header>
+
+<main>
+    <nav>
+        <ul>
+            <li><a href="home.html" th:href="@{/}">Home</a></li>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu()" class="dropdownlink">2017 box office</a>
+                </li>
+                <div id="2017" class="menuitems">
+                    <li><a href="starWars.html" th:href="@{/starWars}">Star Wars: The Last Jedi</a></li>
+                    <li><a href="beauty.html" th:href="@{/beauty}">Beauty and the Beast</a></li>
+                    <li><a href="fate.html" th:href="@{/fate}">Fate of the Furious</a></li>
+                </div>
+            </div>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu2()" class="dropdownlink">2018 box office</a>
+                </li>
+                <div id="box office" class="menuitems">
+                    <li><a href="avengers.html" th:href="@{/avengers}">Avengers</a></li>
+                    <li><a href="panther.html" th:href="@{/panther}">Black Panther</a></li>
+                    <li><a href="jurassic.html" th:href="@{/jurassic}">Jurassic World</a></li>
+                </div>
+            </div>
+            <li><a href="userProfile.html" th:href="@{/userProfile}">Profile</a></li>
+            <li><a href="register.html" th:href="@{/register}">Register</a></li>
+            <li><a href="compare.html" th:href="@{/compare}">Calculate Box Office</a></li>
+        </ul>
+
+    </nav>
+
+    <article>
+        <p> Here are you're user details. It includes your first name, your last name and your email address.
+            Unfortunetly for security reasons we are unable to show your password</p>
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td th:text="${collatedUser.getwebsiteUser().firstName}">Ann</td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td th:text="${collatedUser.getwebsiteUser().lastName}">Ann</td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td th:text="${collatedUser.getwebsiteUser().email}">ann@companay.com</td>
+            </tr>
+
+        </table>
+
+        <p> Here is your login history for since you created your account</p>
+        <table>
+            <tr>
+                <th>Login History</th>
+            </tr>
+            <tr th:each="login : ${collatedUser.logins}">
+                <td th:text="${login.time}">1st March 2019</td>
+            </tr>
+        </table>
+
+    </article>
+
+    <footer>
+        &copy; A. Zenasni 2019
+    </footer>
+</main>
+</body>
+</html>

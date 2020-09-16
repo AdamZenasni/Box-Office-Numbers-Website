@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/layout.css" th:href="@{/layout.css}"/>
+    <script src="../static/main.js" th:src="@{/main.js}"></script>
+    <title>Box Office</title>
+</head>
+<body>
+
+<header>
+    <img src="../static/images/boxOffice.jpg" th:src="@{/images/boxOffice.jpg}" alt="Box Office header"/>
+    <h1>BOX OFFICE NUMBERS</h1>
+    <h6>COMPARE THE TOP FILMS</h6>
+</header>
+
+<main>
+    <nav>
+        <ul>
+            <li><a href="home.html" th:href="@{/}">Home</a></li>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu()" class="dropdownlink">2017 box office</a>
+                </li>
+                <div id="2017" class="menuitems">
+                    <li><a href="starWars.html" th:href="@{/starWars}">Star Wars: The Last Jedi</a></li>
+                    <li><a href="beauty.html" th:href="@{/beauty}">Beauty and the Beast</a></li>
+                    <li><a href="fate.html" th:href="@{/fate}">Fate of the Furious</a></li>
+                </div>
+            </div>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu2()" class="dropdownlink">2018 box office</a>
+                </li>
+                <div id="box office" class="menuitems">
+                    <li><a href="avengers.html" th:href="@{/avengers}">Avengers</a></li>
+                    <li><a href="panther.html" th:href="@{/panther}">Black Panther</a></li>
+                    <li><a href="jurassic.html" th:href="@{/jurassic}">Jurassic World</a></li>
+                </div>
+            </div>
+            <li><a href="userProfile.html" th:href="@{/userProfile}">Profile</a></li>
+            <li><a href="register.html" th:href="@{/register}">Register</a></li>
+            <li><a href="compare.html" th:href="@{/compare}">Calculate Box Office</a></li>
+        </ul>
+
+    </nav>
+
+
+
+    <article>
+
+        <h1><center>JURASSIC WORLD: FALLEN KINGDOM</center></h1>
+
+        <section class="video">
+            <iframe width= 100% height="315" src="https://www.youtube.com/embed/vn9mMeWcgoM" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </section>
+
+        <p>Jurassic World: Fallen Kingdom is a 2018 American science fiction adventure film and the sequel to Jurassic
+            World (2015). Directed by J. A. Bayona, it is the fifth installment of the Jurassic Park film series, as
+            well as the second installment of a planned Jurassic World trilogy. Derek Connolly and Jurassic World
+            director Colin Trevorrow both returned as writers, with Trevorrow and the original Jurassic Park director
+            Steven Spielberg as executive producers.</p>
+
+        <section class="images">
+            <img src="../static/images/jurassic/J1.jpg" th:src="@{/images/jurassic/J1.jpg}" alt="J 1"/>
+        </section>
+
+        <p>Set on the fictional Central American island of Isla Nublar, off the Pacific coast of Costa Rica, it follows
+            Owen Grady and Claire Dearing as they rescue the remaining dinosaurs before a volcanic eruption destroys it.
+            Chris Pratt, Bryce Dallas Howard, B. D. Wong, and Jeff Goldblum reprise their roles from previous films in the
+            series, with Rafe Spall, Justice Smith, Daniella Pineda, James Cromwell, Toby Jones, Ted Levine, Isabella Sermon, and Geraldine Chaplin joining the cast.
+            </p>
+
+        <p>The film grossed over $1.3 billion worldwide, making it the third Jurassic film to pass the billion-dollar
+            mark. It is the third-highest-grossing film of 2018 and the 12th-highest-grossing film of all time. It
+            received mixed reviews from critics, who praised Pratt and Howard's performances, Bayona's direction,
+            visuals, musical score and the "surprisingly dark moments", while others suggested the series had run its
+            course, criticizing the screenplay and predictability. An untitled sequel is set to be released on June 11,
+            2021, with Trevorrow returning to direct.</p>
+
+        <section class="images">
+            <img src="../static/images/jurassic/J2.jpg" th:src="@{/images/jurassic/J2.jpg}" alt="J 2"/>
+        </section>
+
+        <p> The film grossed over $1.3 billion worldwide, making it the third Jurassic film to pass the billion-dollar
+            mark. It is the third-highest-grossing film of 2018 and the 12th-highest-grossing film of all time. It
+            received mixed reviews from critics, who praised Pratt and Howard's performances, Bayona's direction,
+            visuals, musical score and the "surprisingly dark moments", while others suggested the series had run its
+            course, criticizing the screenplay and predictability. An untitled sequel is set to be released on June 11,
+            2021, with Trevorrow returning to direct.
+        </p>
+        <p>
+            In December 2017, a survey from Fandango indicated that Fallen Kingdom was one of the most anticipated films of 2018.
+            Initial projections three weeks before its release had the film grossing between $130–150 million in its opening weekend
+            in the United States and Canada, with BoxOffice magazine estimating a total of $325–380 million for its final domestic gross.
+            By the week of its release, the low-end projections had reached $135 million. It was released on June 22, 2018,
+            in 4,475 theaters (the second-widest release ever behind Despicable Me 3) grossing $58.7 million on its opening day,
+            the second-highest of the franchise and 28th-best on record. The film grossed $15.3 million from Thursday
+            night previews at 3,600 theaters, down from the $18.5 million grossed by Jurassic World. It ended up debuting
+            at $148 million, the 20th-best opening weekend of all time and second-highest for Universal. It also marked
+            the second time two films opened to over $100 million on back-to-back weekends, following Incredibles 2's
+            $182.7 million debut the week before, since May 2007 when Shrek the Third and Pirates of the Caribbean: At
+            World's End opened to $121.6 million and $114.7 million, respectively.In its second weekend the film made
+            $60 million, a drop of 59% and less than the $105.8 million made by Jurassic World in its sophomore weekend.
+            In its third weekend it made $28.3 million</p>
+
+        <section class="images">
+            <img src="../static/images/jurassic/J3.jpg" th:src="@{/images/jurassic/J3.jpg}" alt="J 3"/>
+        </section>
+
+        <p>On review aggregator Rotten Tomatoes, Fallen Kingdom holds an approval rating of 48% based on 382 reviews,
+            with an average rating of 5.5/10. The website's critical consensus reads, "Jurassic World: Fallen Kingdom
+            adds another set piece-packed entry to the blockbuster franchise, although genuinely thrilling moments are
+            in increasingly short supply." On Metacritic, which assigns a normalized rating to reviews, the film has a
+            weighted average score of 51 out of 100, based on 59 critics, indicating "mixed or average reviews". Audiences
+            polled by CinemaScore gave the film an average grade of "A−" on an A+ to F scale, while PostTrak reported
+            filmgoers gave it an 82% overall positive score.</p>
+    </article>
+
+    <footer>
+        &copy; A. Zenasni 2019
+    </footer>
+</main>
+</body>
+</html>

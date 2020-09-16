@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/layout.css" th:href="@{/layout.css}"/>
+    <script src="../static/main.js" th:src="@{/main.js}"></script>
+    <title>Box Office</title>
+</head>
+<body>
+
+<header>
+    <img src="../static/images/boxOffice.jpg" th:src="@{/images/boxOffice.jpg}" alt="Box Office header"/>
+    <h1>BOX OFFICE NUMBERS</h1>
+    <h6>COMPARE THE TOP FILMS</h6>
+</header>
+
+<main>
+    <nav>
+        <ul>
+            <li><a href="home.html" th:href="@{/}">Home</a></li>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu()" class="dropdownlink">2017 box office</a>
+                </li>
+                <div id="2017" class="menuitems">
+                    <li><a href="starWars.html" th:href="@{/starWars}">Star Wars: The Last Jedi</a></li>
+                    <li><a href="beauty.html" th:href="@{/beauty}">Beauty and the Beast</a></li>
+                    <li><a href="fate.html" th:href="@{/fate}">Fate of the Furious</a></li>
+                </div>
+            </div>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu2()" class="dropdownlink">2018 box office</a>
+                </li>
+                <div id="box office" class="menuitems">
+                    <li><a href="avengers.html" th:href="@{/avengers}">Avengers</a></li>
+                    <li><a href="panther.html" th:href="@{/panther}">Black Panther</a></li>
+                    <li><a href="jurassic.html" th:href="@{/jurassic}">Jurassic World</a></li>
+                </div>
+            </div>
+            <li><a href="userProfile.html" th:href="@{/userProfile}">Profile</a></li>
+            <li><a href="register.html" th:href="@{/register}">Register</a></li>
+            <li><a href="compare.html" th:href="@{/compare}">Calculate Box Office</a></li>
+        </ul>
+
+    </nav>
+
+    <article>
+
+        <h1><center>STAR WARS THE LAST JEDI</center></h1>
+
+        <section class="video">
+            <iframe width=100% height="315" src="https://www.youtube.com/embed/Q0CbN8sfihY" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </section>
+
+        <p>Star Wars: The Last Jedi (also known as Star Wars: Episode VIII – The Last Jedi) is a 2017 American epic
+            space opera film written and directed by Rian Johnson. It is the second installment of the Star Warssequel
+            trilogy, following The Force Awakens (2015), and the eighth installment of the main Star Wars film franchise.
+            It was produced by Lucasfilm and distributed by Walt Disney Studios Motion Pictures. </p>
+
+        <section class="images">
+            <img src="../static/images/starWars/s1.jpg" th:src="@{/images/starWars/s1.jpg}" alt="Jedi 1"/>
+        </section>
+
+        <p>The film's ensemble cast includes Daisy Ridley, John Boyega, Oscar Isaac, Adam Driver, Mark Hamill,
+            Carrie Fisher, Andy Serkis, Lupita Nyong'o, Domhnall Gleeson, Anthony Daniels, Gwendoline Christie, and
+            Frank Oz in returning roles, with Kelly Marie Tran, Laura Dern and Benicio del Toro joining the cast. It
+            features the first posthumous film performance by Fisher, who died in December 2016, and the film is
+            dedicated to her memory. </p>
+
+        <p>The plot follows Rey as she receives Jedi training from Luke Skywalker, in hopes of turning the tide for the
+            Resistance in the fight against Kylo Ren and the First Order, while General Leia Organa, Finn, and Poe
+            Dameron attempt to escape a First Order attack on the dwindling Resistance fleet..</p>
+
+        <section class="images">
+            <img src="../static/images/starWars/s2.jpg" th:src="@{/images/starWars/s2.jpg}" alt="Jedi 2"/>
+        </section>
+
+        <p>On review aggregator website Rotten Tomatoes, Star Wars: The Last Jedi has an approval rating of 91% based
+            on 429 reviews, with an average rating of 8.09/10. The website's critical consensus reads, "Star Wars: The
+            Last Jedi honors the saga's rich legacy while adding some surprising twists—and delivering all the emotion-
+            rich action fans could hope for." On Metacritic, the film has a weighted average score of 85 out of 100,
+            based on 56 critics, indicating "universal acclaim".
+            However user-generated scores on Rotten Tomatoes and Metacritic were more negative, achieving ratings of 44%
+            and 4.5/10, respectively. Reviewers characterized The Last Jedi as divisive among audiences. Todd VanDerWerff
+            of Vox found that dissatisfied fans saw the film as too progressive, disliked its humor, plot, or character
+            arcs, or felt betrayed that it ignored fan theories. </p>
+
+        <section class="images">
+            <img src="../static/images/starWars/s3.jpg" th:src="@{/images/starWars/s3.jpg}" alt="Jedi 3"/>
+        </section>
+
+        <p>Star Wars: The Last Jedi grossed $620.2 million in the United States and Canada, and $712.6 million in other
+            territories, for a worldwide total of $1.333 billion. It had a worldwide opening of $450.8 million, the
+            fifth-biggest of all time, including $40.6 million that was attributed to IMAX screenings, the second biggest
+            for IMAX. It was estimated that the film would need to gross $800 million worldwide to break even; Deadline
+            Hollywood calculated the net profit of the film to be $417.5 million, when factoring together all expenses
+            and revenues, making it the most profitable release of 2017. On December 31, 2017, its 17th day of release,
+            it passed the $1 billion threshold, becoming the fourth film of 2017, the fifteenth Disney film, the fourth
+            Star Wars film and the thirty-second film overall to pass the mark.  </p>
+    </article>
+
+
+    <footer>
+        &copy; A. Zenasni 2019
+    </footer>
+</main>
+</body>
+</html>

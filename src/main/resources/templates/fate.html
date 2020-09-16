@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/layout.css" th:href="@{/layout.css}"/>
+    <script src="../static/main.js" th:src="@{/main.js}"></script>
+    <title>Box Office</title>
+</head>
+<body>
+
+<header>
+    <img src="../static/images/boxOffice.jpg" th:src="@{/images/boxOffice.jpg}" alt="Box Office header"/>
+    <h1>BOX OFFICE NUMBERS</h1>
+    <h6>COMPARE THE TOP FILMS</h6>
+</header>
+
+<main>
+    <nav>
+        <ul>
+            <li><a href="home.html" th:href="@{/}">Home</a></li>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu()" class="dropdownlink">2017 box office</a>
+                </li>
+                <div id="2017" class="menuitems">
+                    <li><a href="starWars.html" th:href="@{/starWars}">Star Wars: The Last Jedi</a></li>
+                    <li><a href="beauty.html" th:href="@{/beauty}">Beauty and the Beast</a></li>
+                    <li><a href="fate.html" th:href="@{/fate}">Fate of the Furious</a></li>
+                </div>
+            </div>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu2()" class="dropdownlink">2018 box office</a>
+                </li>
+                <div id="box office" class="menuitems">
+                    <li><a href="avengers.html" th:href="@{/avengers}">Avengers</a></li>
+                    <li><a href="panther.html" th:href="@{/panther}">Black Panther</a></li>
+                    <li><a href="jurassic.html" th:href="@{/jurassic}">Jurassic World</a></li>
+                </div>
+            </div>
+            <li><a href="userProfile.html" th:href="@{/userProfile}">Profile</a></li>
+            <li><a href="register.html" th:href="@{/register}">Register</a></li>
+            <li><a href="compare.html" th:href="@{/compare}">Calculate Box Office</a></li>
+        </ul>
+
+    </nav>
+
+    <article>
+        <!--Content on this site is sourced from Wikipedia -->
+        <h1><center>FATE OF THE FURIOUS</center></h1>
+
+        <section class="video">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/JwMKRevYa_M" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </section>
+
+
+        <p>The Fate of the Furious (alternatively known as Fast & Furious 8 and Fast 8, and often stylized as F8) is a
+            2017 American action film directed by F. Gary Gray and written by Chris Morgan. It is the eighth installment
+            in The Fast and the Furious franchise. The film stars Vin Diesel, Dwayne Johnson, Jason Statham, Michelle
+            Rodriguez, Tyrese Gibson, Chris "Ludacris" Bridges, Scott Eastwood, Nathalie Emmanuel, Elsa Pataky, Kurt
+            Russell and Charlize Theron.</p>
+
+        <section class="images">
+            <img src="../static/images/F8/F81.jpg" th:src="@{/images/F8/F81.jpg}" alt="F8 1"/>
+        </section>
+
+        <p>The Fate of the Furious received mixed reviews. On Rotten Tomatoes, the film has an approval rating of 67%
+            based on 279 reviews, and an average rating of 6.1/10. The website's critical consensus reads, "The Fate of
+            the Furious opens a new chapter in the franchise, fueled by the same infectious cast chemistry and over-the-
+            top action fans have come to expect." On Metacritic, the film has a weighted average score 56 out of 100,
+            based on 45 critics, indicating "mixed or average reviews". Audiences polled by CinemaScore gave the film an
+            average grade of "A" on an A+ to F scale, while PostTrak reported filmgoers gave it an 81% overall positive
+            score and a 71% "definite recommend.".</p>
+
+        <p>The Fate of the Furious' plot follows Dominic Toretto (Diesel), who has settled down with his wife Letty
+            Ortiz (Rodriguez), until cyberterrorist Cipher (Theron) coerces him into working for her and turns him
+            against his team, forcing them to find Dom and take down Cipher</p>
+
+        <section class="images">
+            <img src="../static/images/F8/F82.jpg" th:src="@{/images/F8/F82.jpg}" alt="F8 2"/>
+        </section>
+
+        <p>The Fate of the Furious grossed $226 million in the United States and Canada and $1.010 billion in other
+            territories for a worldwide total of $1.236 billion, against a production budget of $250 million ($350
+            million including marketing costs). It is Universal Pictures' most ambitious worldwide distribution release
+            in the studio's history. The film was released day-and-date in 64 territories worldwide, including almost
+            all major markets (minus Japan), starting from April 12, 2017, and was projected to earn anywhere between
+            $375–440 million in its five-day opening weekend. By the end of the weekend, it ended up earning $539.9
+            million from nearly 23,000 screens, way above initial projections, to score the biggest global opening in
+            cinematic history. It also marked the third time that a film earned over $500 million in a single weekend,
+            after Star Wars: The Force Awakens ($529 million) and Jurassic World ($525.5 million). In IMAX, the film
+            made $31.1 million from 1,079 screens to record the biggest IMAX April debut and the fourth-biggest overall.</p>
+
+        <section class="images">
+            <img src="../static/images/F8/F83.jpg" th:src="@{/images/F8/F83.jpg}" alt="F8 3"/>
+        </section>
+
+        <p>On April 30, it crossed the $1 billion threshold, becoming the second release of 2017 (
+            following Beauty and the Beast), the fifth film released by Universal Pictures (after Jurassic Park, Furious
+            7, Jurassic World, and Minions) and the thirtieth film overall in cinematic history to gross over $1 billion.
+            It is currently the third-highest-grossing film of the year, behind Star Wars: The Last Jedi, and Beauty and
+            the Beast, the second-biggest action film that is not a fantasy or superhero movie, behind Furious 7, and is
+            Universal's highest-grossing live-action release since Jurassic World back in June 2015.
+            The Fate of the Furious concluded 2017 as the third highest-grossing film of the year worldwide.</p>
+    </article>
+
+
+    <footer>
+        &copy; A. Zenasni 2019
+    </footer>
+</main>
+</body>
+</html>

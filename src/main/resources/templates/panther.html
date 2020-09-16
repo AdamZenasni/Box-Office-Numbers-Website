@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/layout.css" th:href="@{/layout.css}"/>
+    <script src="../static/main.js" th:src="@{/main.js}"></script>
+    <title>Box Office</title>
+</head>
+<body>
+
+<header>
+    <img src="../static/images/boxOffice.jpg" th:src="@{/images/boxOffice.jpg}" alt="Box Office header"/>
+    <h1>BOX OFFICE NUMBERS</h1>
+    <h6>COMPARE THE TOP FILMS</h6>
+</header>
+
+<main>
+    <nav>
+        <ul>
+            <li><a href="home.html" th:href="@{/}">Home</a></li>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu()" class="dropdownlink">2017 box office</a>
+                </li>
+                <div id="2017" class="menuitems">
+                    <li><a href="starWars.html" th:href="@{/starWars}">Star Wars: The Last Jedi</a></li>
+                    <li><a href="beauty.html" th:href="@{/beauty}">Beauty and the Beast</a></li>
+                    <li><a href="fate.html" th:href="@{/fate}">Fate of the Furious</a></li>
+                </div>
+            </div>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu2()" class="dropdownlink">2018 box office</a>
+                </li>
+                <div id="box office" class="menuitems">
+                    <li><a href="avengers.html" th:href="@{/avengers}">Avengers</a></li>
+                    <li><a href="panther.html" th:href="@{/panther}">Black Panther</a></li>
+                    <li><a href="jurassic.html" th:href="@{/jurassic}">Jurassic World</a></li>
+                </div>
+            </div>
+            <li><a href="userProfile.html" th:href="@{/userProfile}">Profile</a></li>
+            <li><a href="register.html" th:href="@{/register}">Register</a></li>
+            <li><a href="compare.html" th:href="@{/compare}">Calculate Box Office</a></li>
+        </ul>
+
+    </nav>
+
+    <article>
+
+        <h1><center>BLACK PANTHER</center></h1>
+
+        <section class="video">
+            <iframe width=100% height="315" src="https://www.youtube.com/embed/xjDjIWPwcPU" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </section>
+
+        <p>Black Panther is a 2018 American superhero film based on the Marvel Comics character of the same name.
+            Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the eighteenth film
+            in the Marvel Cinematic Universe (MCU). The film is directed by Ryan Coogler, who co-wrote the screenplay
+            with Joe Robert Cole, and stars Chadwick Boseman as T'Challa / Black Panther, alongside Michael B. Jordan,
+            Lupita Nyong'o, Danai Gurira, Martin Freeman, Daniel Kaluuya, Letitia Wright, Winston Duke, Angela Bassett,
+            Forest Whitaker, and Andy Serkis.
+        </p>
+
+        <section class="images">
+            <img src="../static/images/panther/P1.jpg" th:src="@{/images/panther/P1.jpg}" alt="P 1"/>
+        </section>
+
+        <p>The film received numerous awards and nominations, with seven nominations at the 91st Academy Awards including
+            Best Picture, with wins for Best Costume Design, Best Original Score, and Best Production Design. Black Panther
+            is the first superhero film ever to receive a Best Picture nomination, as well as the first film in the MCU
+            to win an Academy Award. The film also received three nominations at the 76th Golden Globe Awards, two wins
+            at the 25th Screen Actors Guild Awards, and twelve nominations at the 24th Critics' Choice Awards (winning
+            three), among others. A sequel is in development with Coogler returning to write and direct.</p>
+
+        <p>The plot follows the story of the Black Panther. T'Challa is crowned king of Wakanda following his father's
+            death, but his sovereignty is challenged by an adversary who plans to abandon the country's isolationist
+            policies and begin a global revolution whilst he is being forced to confront his father's biggest fears.</p>
+
+        <section class="images">
+            <img src="../static/images/panther/P2.jpg" th:src="@{/images/panther/P2.jpg}" alt="P 2"/>
+        </section>
+
+        <p>Beauty and the Beast received generally positive reviews, with praise for its ensemble cast, visuals,
+            production values, musical score, songs, and faithfulness to the original film with a few elements of the
+            Broadway musical version, while the designs of the Beast and the servants' household object forms received
+            mixed reviews. On review aggregator Rotten Tomatoes, the film has an approval rating of 71% based on 346
+            reviews, with an average rating of 6.7/10. The website's critical consensus reads, "With an enchanting cast,
+            beautifully crafted songs, and a painterly eye for detail, Beauty and the Beast offers a faithful yet fresh
+            retelling that honors its beloved source material."[181] On Metacritic, the film has a score of 65 out of
+            100, based on 47 critics, indicating "generally favorable reviews".[182] In CinemaScore polls, audiences
+            gave the film an average grade of "A" on an A+ to F scale</p>
+
+        <section class="images">
+            <img src="../static/images/panther/P3.jpg" th:src="@{/images/panther/P3.jpg}" alt="P 3"/>
+        </section>
+
+        <p>Black Panther grossed $700.1 million in the United States and Canada, and $646.9 million in other
+            territories, for a worldwide total of $1.347 billion. During its theatrical run, it became the highest-
+            grossing solo superhero film, the third-highest-grossing film of the MCU and superhero film overall, the
+            ninth-highest-grossing film of all time, and the highest grossing film by a black director. It is the fifth
+            MCU film and 33rd overall to surpass $1 billion, and the second-highest-grossing film of 2018. In March 2018
+            Deadline Hollywood estimated the net profit of the film would be $461 million, accounting for production
+            budgets, P&A, talent participations and other costs, with box office grosses and ancillary revenues from
+            home media.</p>
+    </article>
+
+    <footer>
+        &copy; A. Zenasni 2019
+    </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/layout.css" th:href="@{/layout.css}"/>
+    <script src="../static/main.js" th:src="@{/main.js}"></script>
+    <title>Box Office</title>
+</head>
+<body>
+
+<header>
+    <img src="../static/images/boxOffice.jpg" th:src="@{/images/boxOffice.jpg}" alt="Box Office header"/>
+    <h1>BOX OFFICE NUMBERS</h1>
+    <h6>COMPARE THE TOP FILMS</h6>
+</header>
+
+<main>
+    <nav>
+        <ul>
+            <li><a href="home.html" th:href="@{/}">Home</a></li>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu()" class="dropdownlink">2017 box office</a>
+                </li>
+                <div id="2017" class="menuitems">
+                    <li><a href="starWars.html" th:href="@{/starWars}">Star Wars: The Last Jedi</a></li>
+                    <li><a href="beauty.html" th:href="@{/beauty}">Beauty and the Beast</a></li>
+                    <li><a href="fate.html" th:href="@{/fate}">Fate of the Furious</a></li>
+                </div>
+            </div>
+            <div class="dropdown">
+                <li>
+                    <a onclick="show_menu2()" class="dropdownlink">2018 box office</a>
+                </li>
+                <div id="box office" class="menuitems">
+                    <li><a href="avengers.html" th:href="@{/avengers}">Avengers</a></li>
+                    <li><a href="panther.html" th:href="@{/panther}">Black Panther</a></li>
+                    <li><a href="jurassic.html" th:href="@{/jurassic}">Jurassic World</a></li>
+                </div>
+            </div>
+            <li><a href="userProfile.html" th:href="@{/userProfile}">Profile</a></li>
+            <li><a href="register.html" th:href="@{/register}">Register</a></li>
+            <li><a href="compare.html" th:href="@{/compare}">Calculate Box Office</a></li>
+        </ul>
+
+    </nav>
+
+    <article>
+
+        <h1><center>AVENGERS: INFINTY WAR</center></h1>
+
+        <section class="video">
+            <iframe width= 100% height="315" src="https://www.youtube.com/embed/6ZfuNTqbHE8" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </section>
+
+        <p>Avengers: Infinity War is a 2018 American superhero film based on the Marvel Comics superhero team the
+            Avengers, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is the
+            sequel to 2012's The Avengers and 2015's Avengers: Age of Ultron, and the nineteenth film in the Marvel
+            Cinematic Universe (MCU). The film is directed by Anthony and Joe Russo, written by Christopher Markus and
+            Stephen McFeely, and features an ensemble cast including Robert Downey Jr., Chris Hemsworth, Mark Ruffalo,
+            Chris Evans, Scarlett Johansson, Benedict Cumberbatch, Don Cheadle, Tom Holland, Chadwick Boseman, Paul
+            Bettany, Elizabeth Olsen, Anthony Mackie, Sebastian Stan, Danai Gurira, Letitia Wright, Dave Bautista, Zoe
+            Saldana, Josh Brolin, and Chris Pratt.</p>
+
+        <section class="images">
+            <img src="../static/images/avengers/1.jpg" th:src="@{/images/avengers/1.jpg}" alt="A 1"/>
+        </section>
+
+        <p>As the Avengers and their allies have continued to protect the world from threats too large for any one hero
+            to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his
+            goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his
+            twisted will on all of reality. Everything the Avengers have fought for has led up to this moment, the fate
+            of Earth and existence has never been more uncertain.
+            Avengers: Infinity War grossed $678.8 million in the United States and Canada, and $1.370 billion in other
+            territories, for a worldwide total of $2.048 billion. It became the fourth highest-grossing film of all time,
+            as well as the highest-grossing film of 2018, the highest-grossing MCU film, and the highest-grossing superhero film.</p>
+
+        <p>The film received praise for the performances of the cast (particularly Brolin's) and the emotional weight of
+            the story, as well as the visual effects and action sequences. It was the fourth film and the first superhero
+            film to gross over $2 billion worldwide, breaking numerous box office records and becoming the highest-
+            grossing film of 2018, as well as the fourth-highest-grossing film of all time and in the United States and
+            Canada. The film received Academy Award and BAFTA nominations for achievements in visual effects. The sequel,
+            Avengers: Endgame, is set to be released on April 26, 2019.</p>
+
+        <section class="images">
+            <img src="../static/images/avengers/2.jpg" th:src="@{/images/avengers/2.jpg}" alt="A 2"/>
+        </section>
+
+        <p> Its worldwide opening weekend of $640.5 million is the biggest of all time, beating The Fate of the Furious'
+            (2017) $541.9 million. It was the fastest film to make $1 billion at the worldwide box office, doing so in
+            11 days to eclipse Star Wars: The Force Awakens' (2015) record of 12 days. Also in its second weekend,
+            Infinity War passed $13.5 million from 4DX screens, which was the all-time record for the format. On June 12,
+            2018, Avengers: Infinity War passed the $2 billion mark at the worldwide box office, becoming the fourth
+            film to cross that milestone after Avatar (2009), Titanic (1997), and The Force Awakens. Crossing the mark
+            in 48 days, it was the second-fastest to that point, after Avatar's 47-day record. With $140 million worldwide
+            from IMAX, the film is the third-largest worldwide in the format, behind Avatar and The Force Awakens,
+            and the largest for a Marvel film. In May 2018, two weeks after its release, Deadline Hollywood deduced the
+            film had already broken even and estimated its net profit would be around $600 million. This value took into
+            account production budgets, P&A, talent participations, and other costs, with box office grosses and ancillary
+            revenues from home media.</p>
+
+        <section class="images">
+            <img src="../static/images/avengers/3.png" th:src="@{/images/avengers/3.png}" alt="A 3"/>
+        </section>
+
+        <p>The review aggregator website Rotten Tomatoes reported an 85% approval rating based on 423 reviews, and an average
+            rating of 7.59/10. The website's critical consensus reads, "Avengers: Infinity War ably juggles a dizzying
+            array of MCU heroes in the fight against their gravest threat yet, and the result is a thrilling, emotionally
+            resonant blockbuster that (mostly) realizes its gargantuan ambitions". Metacritic, which uses a weighted average,
+            assigned the film a score of 68 out of 100, based on 53 critics, indicating "generally favorable reviews". </p>
+    </article>
+
+    <footer>
+        &copy; A. Zenasni 2019
+    </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,357 @@
+/*
+Set the box-sizing to border to incorporate the border into box size calulations.
+
+ */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+}
+
+/*
+Set the main section to be centred on the page by setting margin auto on the left and right margins. Set up
+grid display within main section.
+ */
+main {
+    /*max-width: ;*/
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    grid-template-rows: auto;
+}
+
+/* Styling the navagation bar to make sure the buttons line up with the tags implemented in HTML */
+
+ul {
+    position: sticky;
+    padding: 0.2rem;
+    margin-bottom: 0.1rem;
+    margin-right: 0.6rem;
+    width: 150px;
+    display: inline-table;
+
+}
+li a{
+    position: sticky;
+    display: block;
+     color: black;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 16px 16px;
+}
+
+/*
+Set up the header image to take up the full width of the header section
+ */
+
+header img {
+    width: 100%;
+    filter: brightness(80%);
+}
+
+/*
+Overlay the image with h1 text scaled to 6 rem and h6 text scalled to 2rem as a sub-heading
+ */
+
+header h1{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 6rem;
+}
+
+header h6{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/*
+Add the nav bar down the side taking up
+1 of the columns
+ */
+nav {
+    grid-column: 0 / span 1 ;
+    position: sticky;
+}
+
+/* Style the font and its size */
+
+article h1{
+    font-weight: bold;
+    font-size: 4rem;
+    color: #ffbd00;
+}
+article p{
+    font-size: 1.5rem;
+}
+/*
+Put the article section in the first row under the header, taking
+up the all the columns after the nav bar
+ */
+article {
+    grid-column: 2 / span 2;
+
+}
+
+/* Center the header cell in the HTML table */
+
+th{
+    text-align: center;
+}
+
+/* Create the table and implement it */
+
+table{
+    font-family: "Trebuchet MS", Arial,Helvetica,sans-serif;
+    border-collapse: collapse;
+    position: sticky;
+    left: 500px;
+    width: 50%;
+}
+
+table td.table th{
+    border: 1px solid #dddddd;
+    padding: 50px;
+}
+
+table tr:nth-child(even){background-color: #dddddd;}
+
+table tr:hover {background-color: #dddddd}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #333333;
+    color: white;
+}
+
+
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+/*
+Each section should also span the full width after the nav bar. Take up all columns.
+ */
+section {
+    grid-column: 4 / -1;
+}
+
+
+/*
+Put the images section in the 3 row (after header and article) and use
+flex to display the images in a line.
+ */
+.images {
+    display: flex;
+    padding: 0 4px;
+}
+
+/*
+Put the video section after the images
+ */
+.video {
+    grid-row: 4;
+    width: 100%;
+}
+
+/*
+Set each image in the images section to take up 100% of the width
+ */
+
+section img {
+    width: 100%;
+    height: 100%;
+}
+
+/*
+Create a button; and implement it
+ */
+
+button{
+    background-color: #ffbd00; /* Green */
+    border: none;
+    color: white;
+    padding: 50px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/*
+Put the foot into the last row, spanning all the columns
+ */
+
+footer {
+    text-align: center;
+    grid-column: 1 / span 3 ;
+
+}
+
+/*
+Create the button that will contain the text which was defined earlier
+ */
+nav li {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    display:inline;
+}
+
+nav a {
+    position: sticky;
+    display:inline-block;
+    background-color: #ffbd00;
+    text-align: center;
+    color:#ffffff;
+    width: 100%;
+    padding:2rem;
+    margin-right:0.1rem;
+    margin-bottom:0.1rem;
+}
+
+/*
+Hover
+ */
+a:hover {
+    position: sticky;
+    font-size: 1.7rem;
+}
+
+.responsive {
+    max-width: 100%;
+}
+
+input[type=number]{
+    font-size: 1.2rem;
+}
+
+#result {
+    font-size: 1.2rem;
+}
+
+@media screen and (max-device-width: 30rem) {
+
+    /*
+    For mobile devices move the nav section to be a row rather than a side bar
+     */
+    nav {
+        grid-column: 1 / -1;
+
+    }
+
+    header h1{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 3rem;
+    }
+
+    header h6{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate( -50%, -50% );
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 0.5rem;
+    }
+    /*
+    Change the list of links to display horizontally (using flex)
+     */
+    nav ul {
+        display: flex;
+    }
+
+    nav a {
+        font-size: 2.2rem;
+        padding: 1rem;
+    }
+
+    /*
+    Change the article to span all the columns
+     */
+    article {
+        grid-column: 1 / -1;
+        grid-row: 3;
+    }
+
+    /*
+    Set all sections to span all 12 columns
+     */
+    section {
+        grid-column: 1 / -1;
+    }
+
+    .images {
+        grid-row: 4;
+    }
+
+    .video {
+        grid-row: 5;
+    }
+
+    footer {
+        grid-row: 6;
+    }
+
+
+}
+
+
+/*.dropdownlink a {*/
+    /*display:block;*/
+    /*background-color: #4d325d;*/
+    /*color:#ffffff;*/
+    /*padding:0.2rem;*/
+    /*margin-right:0.1rem;*/
+    /*margin-bottom:0.1rem;*/
+    /*text-decoration: underline;*/
+/*}*/
+
+/*.dropdown {*/
+    /*position: relative;*/
+    /*display: inline-block;*/
+/*}*/
+
+
+/*
+For the dropdown box
+ */
+.menuitems {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.menuitems a {
+    display:block;
+    background-color: #ffbd00;
+    color:#ffffff;
+    padding:0.2rem;
+    margin-right:0.1rem;
+    margin-bottom:0.1rem;
+}
+
+.show {display:block;}
